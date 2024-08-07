@@ -1,0 +1,183 @@
+\documentclass[11pt]{extreport}
+\usepackage[fontsize=11.5pt]{scrextend} % Set font size to 11.5pt
+\usepackage{latexsym}
+\usepackage[default]{lato}
+\usepackage{fontawesome5}
+\usepackage[empty]{fullpage}
+\usepackage{fontawesome, graphicx}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\newcommand*{\phoneReceiverB}{{\fontspec{quivira.otf}\symbol{"1F4DE}}}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{blue}\titlerule \vspace{-5pt}]
+
+% Ensure that generated pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\  
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\huge \textcolor{blue}{Yazan Haddad}} \\ \vspace{8pt}
+    \small \raisebox{-0.25ex}{\faPhone} 437-450-0117 $|$ {{\faEnvelope \, haddad.yazan117@gmail.com}} $|$ 
+\href{https://www.linkedin.com/in/hxddad}{\faLinkedin \, linkedin.com/in/hxddad} $|$ \href{https://hxddad.dev}{\faGlobe \, https://hxddad.dev}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\textcolor{blue}{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {York University - Lassonde School of Engineering}{Toronto, ON}
+      {Bachelor of Engineering in Spec. Hons. Software Engineering}{Expected: Apr. 2026} 
+      \vspace{10pt}\\
+      \textbf{GPA:} 3.3/4.0 \\
+      \textbf{Coursework:} Object-Oriented Programming, Data Structures, Computer Organization
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{\textcolor{blue}{Experience}}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+            {Project Manager}{Toronto, ON}
+            {Lassonde School of Engineering}{Jan. 2023 -- Apr. 2023}
+            \resumeItemListStart
+                \resumeItem{Managed and \textbf{lead} an \textbf{engineering course project} focusing on mental health of engineering students.}
+                \resumeItem{Conducted engineering student \textbf{surveys} and research forming problem statement and solutions.}
+                \resumeItem{Scheduled weekly \textbf{team meetings} and provided \textbf{feedback and next steps} for individual work in project \textbf{log report.}}
+                \resumeItem{Delivered \textbf{presentations} to professors in seminars for weekly project progress.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{\textcolor{blue}{Projects}}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{\href{https://github.com/hxddad/COVID-19-Screening-Assessment}{\underline{ArduinoVid-19 Assessment  \faExternalLink}}} $|$ \emph{Java, Arduino Uno, Princeton StdLib, Java Swing}}{}
+            \resumeItemListStart
+                \resumeItem{Implemented a COVID-19 screening assessment using \textbf{Java + Arduino Uno} with a temperature sensor.}
+                \resumeItem{Integrated libraries \textbf{JSSC \& Firmata4j} to communicate with board pins including temperature sensor, buzzer and OLED display.}
+                \resumeItem{Designed and implemented \textbf{Java Swing dialogue boxes} of alerts and questions during screening procedure.}
+                \resumeItem{Measured and plotted temperature-zone graph using sensor and \textbf{StdLib} to alert client with buzzer for possible fever.}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{\href{https://github.com/hxddad/hungry-lions}{\underline{HungryLions  \faExternalLink}}} $|$ \emph{Java, Python, SQLite, Java Swing, BeautifulSoup}}{}
+            \resumeItemListStart
+                \resumeItem{Collaborated in a project of five people showcasing a dining application at all York University campuses.}
+                \resumeItem{Followed \textbf{agile project management} through software development iterations.}
+                \resumeItem{Designed application GUI with \textbf{Java Swing} establishing database connection for user requests using \textbf{SQLite}.}
+                \resumeItem{Parsed data (restaurants, dietary restrictions, locations, etc.) from website using Python's \textbf{BeautifulSoup} package for users to filter restaurants.}
+                \resumeItem{Verified code functionality and robustness by \textbf{testing} standard and edge cases using \textbf{JUnit}.}
+            \resumeItemListEnd
+            \resumeProjectHeading
+            {\textbf{\href{https://hxddad.github.io/york-swe-edge/index.html}{\underline{York SWE Edge  \faExternalLink}}} $|$ \emph{HTML, CSS, Javascript}}{}
+            \resumeItemListStart
+               \resumeItem{Built a website using \textbf{HTML, CSS \& JavaScript}
+               as a guide Software Engineering students at York University for academic success.}
+               \resumeItem{Provided useful guides for students regarding courses,
+               FAQs, resources, etc.}
+               \resumeItem{Ensured user-friendly navigation by designing clear and concise user flows and interactive elements.}
+            \resumeItemListEnd
+            \resumeProjectHeading
+            {\textbf{\href{https://hxddad.dev}{\underline{Portfolio Site  \faExternalLink}}} $|$ \emph{HTML, CSS, JavaScript, React.js, Node.js}}{}
+            \resumeItemListStart
+            \resumeItem{Developed a portfolio site using \textbf{JavaScript} showcasing my projects and skills.}
+            \resumeItem{Utilized frameworks including \textbf{React \& Node.js}
+            for a dynamic UI and seamless UX.}
+            \resumeItem{Deployed the site using Netlify (or your deployment platform) for continuous integration and delivery.}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\textcolor{blue}{Technical Skills}}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Java, Python, HTML, CSS, JavaScript, SQL.} \\
+     \textbf{Frameworks \& Developer Tools}{: React.js, Node.js, Git, Unix/Linux, JUnit, Flask, SQLite.} \\
+     \textbf{Libraries}{: JSSC, Firmata4j, Princeton StdLib, BeautifulSoup.}
+    }}
+ \end{itemize}
+
+\end{document}
