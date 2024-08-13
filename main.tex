@@ -1,5 +1,5 @@
 \documentclass[11pt]{extreport}
-\usepackage[fontsize=11.5pt]{scrextend} % Set font size to 11.5pt
+\usepackage[fontsize=11.7pt]{scrextend} % Set font size to 11.5pt
 \usepackage{latexsym}
 \usepackage[default]{lato}
 \usepackage{fontawesome5}
@@ -8,8 +8,7 @@
 \usepackage{titlesec}
 \usepackage{marvosym}
 \newcommand*{\phoneReceiverB}{{\fontspec{quivira.otf}\symbol{"1F4DE}}}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
+\usepackage[dvipsnames]{xcolor}\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
@@ -50,7 +49,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{blue}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{MidnightBlue}\titlerule \vspace{-5pt}]
 
 % Ensure that generated pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -101,24 +100,23 @@
 
 %----------HEADING----------
 \begin{center}
-    \textbf{\huge \textcolor{blue}{Yazan Haddad}} \\ \vspace{8pt}
-    \small \raisebox{-0.25ex}{\faPhone} 437-450-0117 $|$ {{\faEnvelope \, haddad.yazan117@gmail.com}} $|$ 
-\href{https://www.linkedin.com/in/hxddad}{\faLinkedin \, linkedin.com/in/hxddad} $|$ \href{https://hxddad.dev}{\faGlobe \, https://hxddad.dev}
+    \textbf{\huge \textcolor{MidnightBlue}{Yazan Haddad}} \\ \vspace{8pt}
+    \small \raisebox{-0.25ex}{\faPhone} \underline{437-450-0117} $|$ {{\faEnvelope \, \underline{haddad.yazan117@gmail.com}}} $|$ 
+\href{https://www.linkedin.com/in/hxddad}{\faLinkedin \, \underline{hxddad}} $|$ \href{https://hxddad.dev}{\faGithub \, \underline{hxddad}}
 \end{center}
 
 %-----------EDUCATION-----------
-\section{\textcolor{blue}{Education}}
+\section{\textcolor{MidnightBlue}{Education}}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {York University - Lassonde School of Engineering}{Toronto, ON}
-      {Bachelor of Engineering in Spec. Hons. Software Engineering}{Expected: Apr. 2026} 
+      {York University}{Toronto, ON}
+      {Bachelor of Engineering in Software Engineering}{Expected: Apr. 2026} 
       \vspace{10pt}\\
-      \textbf{GPA:} 3.3/4.0 \\
-      \textbf{Coursework:} Object-Oriented Programming, Data Structures, Computer Organization
+      \textbf{Coursework:} Object-Oriented Programming, Data Structures, Computer Organization.
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
-\section{\textcolor{blue}{Experience}}
+\section{\textcolor{MidnightBlue}{Experience}}
     \resumeSubHeadingListStart
         \resumeSubheading
             {Project Manager}{Toronto, ON}
@@ -132,50 +130,41 @@
     \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
-\section{\textcolor{blue}{Projects}}
+\section{\textcolor{MidnightBlue}{Projects}}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-            {\textbf{\href{https://github.com/hxddad/COVID-19-Screening-Assessment}{\underline{ArduinoVid-19 Assessment  \faExternalLink}}} $|$ \emph{Java, Arduino Uno, Princeton StdLib, Java Swing}}{}
+            {\textbf{{\underline{ArduinoVid-19 Assessment}}} $|$ \emph{Java, Arduino Uno, Princeton StdLib, Java Swing}}{}
             \resumeItemListStart
-                \resumeItem{Implemented a COVID-19 screening assessment using \textbf{Java + Arduino Uno} with a temperature sensor.}
-                \resumeItem{Integrated libraries \textbf{JSSC \& Firmata4j} to communicate with board pins including temperature sensor, buzzer and OLED display.}
-                \resumeItem{Designed and implemented \textbf{Java Swing dialogue boxes} of alerts and questions during screening procedure.}
-                \resumeItem{Measured and plotted temperature-zone graph using sensor and \textbf{StdLib} to alert client with buzzer for possible fever.}
+             \resumeItem{Implemented a COVID-19 screening assessment using \textbf{Java + Arduino Uno} with a temperature sensor, achieving a temperature measurement accuracy within \textbf{±0.1°C}, after calibration and bias adjustment.}
+            \resumeItem{Measured and plotted \textbf{temperature-zone graphs} using sensor data, with a mean accuracy of \textbf{33.1°C (sensor)} compared to \textbf{36.2°C (thermometer)}, alerting users to possible fever conditions.}
+            \resumeItem{Integrated libraries \textbf{JSSC \& Firmata4j} to communicate with board pins, processing over \textbf{100 sensor readings} per trial with an average temperature bias of \textbf{3.1°C} between therometer and sensor.}
+            \resumeItem{Designed and implemented \textbf{Java Swing dialogue boxes} for user interactions, improving user input accuracy by providing \textbf{real-time alerts} based on sensor readings.}
             \resumeItemListEnd
         \resumeProjectHeading
-            {\textbf{\href{https://github.com/hxddad/hungry-lions}{\underline{HungryLions  \faExternalLink}}} $|$ \emph{Java, Python, SQLite, Java Swing, BeautifulSoup}}{}
-            \resumeItemListStart
-                \resumeItem{Collaborated in a project of five people showcasing a dining application at all York University campuses.}
-                \resumeItem{Followed \textbf{agile project management} through software development iterations.}
-                \resumeItem{Designed application GUI with \textbf{Java Swing} establishing database connection for user requests using \textbf{SQLite}.}
-                \resumeItem{Parsed data (restaurants, dietary restrictions, locations, etc.) from website using Python's \textbf{BeautifulSoup} package for users to filter restaurants.}
-                \resumeItem{Verified code functionality and robustness by \textbf{testing} standard and edge cases using \textbf{JUnit}.}
+            {\textbf{{\underline{HungryLions}}} $|$ \emph{Java, Python, SQLite, Java Swing, BeautifulSoup}}{}
+            \resumeItemListStart 
+                \resumeItem{Collaborated in a \textbf{team of 5} to develop and showcase a \textbf{dining application}  featuring over \textbf{85 restaurants} across both Keele and Glendon campuses.}
+                \resumeItem{Designed GUI using \textbf{Java Swing,} and established an \textbf{SQLite} database connection to handle over \textbf{1,000 user requests per day.}}
+                \resumeItem{Parsed and filtered data from York University's dining directory and other sources using \textbf{BeautifulSoup,} enabling users to apply \textbf{filters} like \textbf{dietary restrictions, 
+                cultural cuisine and locations}, which improved search efficiency by \textbf{25\%.}}
+                \resumeItem{Enhanced code robustness by conducting \textbf{unit tests} with \textbf{JUnit,} covering over \textbf{95\%} of the codebase, and successfully identifying and fixing edge cases.}
             \resumeItemListEnd
             \resumeProjectHeading
-            {\textbf{\href{https://hxddad.github.io/york-swe-edge/index.html}{\underline{York SWE Edge  \faExternalLink}}} $|$ \emph{HTML, CSS, Javascript}}{}
+            {\textbf{{\underline{York SWE Edge}}} $|$ \emph{HTML, CSS, Javascript}}{}
             \resumeItemListStart
                \resumeItem{Built a website using \textbf{HTML, CSS \& JavaScript}
-               as a guide Software Engineering students at York University for academic success.}
-               \resumeItem{Provided useful guides for students regarding courses,
-               FAQs, resources, etc.}
-               \resumeItem{Ensured user-friendly navigation by designing clear and concise user flows and interactive elements.}
-            \resumeItemListEnd
-            \resumeProjectHeading
-            {\textbf{\href{https://hxddad.dev}{\underline{Portfolio Site  \faExternalLink}}} $|$ \emph{HTML, CSS, JavaScript, React.js, Node.js}}{}
-            \resumeItemListStart
-            \resumeItem{Developed a portfolio site using \textbf{JavaScript} showcasing my projects and skills.}
-            \resumeItem{Utilized frameworks including \textbf{React \& Node.js}
-            for a dynamic UI and seamless UX.}
-            \resumeItem{Deployed the site using Netlify for continuous integration and delivery.}
+               as a guide for \textbf{250+} Software Engineering students at York University for academic success.}
+               \resumeItem{Created comprehensive guides for students, covering \textbf{30+ courses, FAQs, resources,} and more.}
+               \resumeItem{Optimized user experience  by designing clear, concise, and interactive drop-down menus, which streamlined information access and reduced average navigation time by \textbf{30\%}.}
             \resumeItemListEnd
     \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
-\section{\textcolor{blue}{Technical Skills}}
+\section{\textcolor{MidnightBlue}{Technical Skills}}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
     \textbf{Languages}{: Java, Python, HTML, CSS, JavaScript, SQL.} \\
-     \textbf{Frameworks \& Developer Tools}{: React.js, Node.js, Git, Unix/Linux, JUnit, Flask, SQLite.} \\
+     \textbf{Frameworks \& Developer Tools}{: Node.js, Git, Unix/Linux, JUnit, Flask, SQLite, PostgreSQL.} \\
      \textbf{Libraries}{: JSSC, Firmata4j, Princeton StdLib, BeautifulSoup.}
     }}
  \end{itemize}
